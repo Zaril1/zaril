@@ -1,0 +1,258 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Movie Ticket
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #333;
+        }
+
+        .container {
+            display: flex;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .movie-poster {
+            position: relative;
+            width: 50%;
+        }
+
+        .movie-poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .movie-info {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .movie-info h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .movie-info .genres {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .movie-info .genres span {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .ticket {
+            width: 50%;
+            padding: 20px;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .ticket-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ticket-header h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .ticket-header .close-btn {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .ticket-content {
+            margin-top: 20px;
+        }
+
+        .ticket-content p {
+            margin: 5px 0;
+        }
+
+        .ticket-content img {
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .ticket-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .ticket-footer .total-amount {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .ticket-footer .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .ticket-footer .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .ticket-footer .buttons .checkout-btn {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .ticket-footer .buttons .cancel-btn {
+            background-color: #f44336;
+            color: #fff;
+        }
+
+        .barcode {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .barcode img {
+            width: 50px;
+            height: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .movie-poster,
+            .ticket {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="movie-poster">
+            <img alt="Movie poster showing a young couple facing each other with a group of people in the background"
+                height="450"
+                src="asset/Poster_Galaksi.jpg"
+                width="300" />
+            <div class="movie-info">
+                <h2>
+                    Galaksi
+                </h2>
+                <div class="genres">
+                    <span>
+                        Laga
+                    </span>
+                    <span>
+                        Romans
+                    </span>
+                    <span>
+                        Drama
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="ticket">
+            <div class="ticket-header">
+                <h2>
+                    Your Ticket
+                </h2>
+                <span class="close-btn">
+                    ×
+                </span>
+            </div>
+            <div class="ticket-content">
+                <p>
+                    Once you buy a movie ticket simply scan the barcode to access to your movie
+                </p>
+                <div style="display: flex;">
+                    <img alt="Movie poster thumbnail showing a young couple facing each other" height="150"
+                        src="MV5BMTkwOTQ4OTg0OV5BMl5BanBnXkFtZTgwMzQyOTM0OTE@._V1_FMjpg_UX1000_.jpg"
+                        width="100" />
+                    <div>
+                        <p>
+                            Movie Name : Galaksi
+                        </p>
+                        <p>
+                            Date and time : Fri, 19 Oct, 16:30 PM
+                        </p>
+                        <p>
+                            Seat : row 6 , F4 , F5 ,F6,F7
+                        </p>
+                        <p>
+                            Total Member : 4
+                        </p>
+                        <p>
+                            Price : 4
+                        </p>
+                        <p>
+                            Price 1 : $10
+                        </p>
+                        <p>
+                            Total : 4 : $40
+                        </p>
+                        <p>
+                            Taxt : $2
+                        </p>
+                        <p>
+                            Documen : 0
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-footer">
+                <div class="total-amount">
+                    Total Amount : $42
+                </div>
+                <div class="buttons">
+                    <button class="checkout-btn">
+                       <a href="indx.html">ceak out</a>
+                    </button>
+                    <button class="cancel-btn">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+            <div class="barcode">
+                <img alt="Barcode icon" height="50"
+                    src="https://storage.googleapis.com/a1aa/image/Ip9cNJfFs4QDLaupBrxvPItkl0bP282q8flqm0gmcgp7D26TA.jpg"
+                    width="50" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

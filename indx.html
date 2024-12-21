@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Cinema</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1c1c1c;
+            color: #fff;
+        }
+        .navbar {
+            background-color: #4b0000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .search-bar {
+            background-color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: 200px;
+        }
+        .main-image {
+            width: 100%;
+            height: auto;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .buttons button {
+            background-color: #4b0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            background-color: #6b0000;
+        }
+        .movie-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+        .movie-grid img {
+            width: 200px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .navbar a {
+                font-size: 14px;
+            }
+            .search-bar {
+                width: 150px;
+            }
+            .buttons button {
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+            .movie-grid img {
+                width: 150px;
+                height: 225px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Live Cinema</a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="movie.html">Movie</a>
+            <a href="jm.htm">Schedule</a>
+            <a href="kayuk.html">Contact</a>
+        </div>
+        <input class="search-bar" type="text" placeholder="Search...">
+    </div>
+    <img class="main-image" src="asset/003_001_359_pic.jpg" alt="Stage with red curtains">
+    <div class="buttons">
+        <button>Membership</button>
+        <button>Gift Card</button>
+        <button>Safe Payment</button>
+        <button>24/7 Support</button>
+        <button>Booking</button>
+    </div>
+    <div class="movie-grid">
+        <img src="asset/Suzume_no_Tojimari_poster.jpg" alt="Movie poster 1">
+        <img src="asset/images-2-794435837.webp" alt="Movie poster 2">
+        <img src="asset/d75c2d95732ab6f72a3864046ede6155.jpg" alt="Movie poster 3">
+        <img src="asset/434027936-344085144719093-3974308654320919771-n-09b5fb8eb409260e33ab89df9e687e7c-d72d42ad02c0b289219506548aab84a6.jpg" alt="Movie poster 4">
+        <img src="asset/AAAABcfDMaIil0Srjdpt9COU8_2Zkk38zBkSQbWPG6mwvUNT8RGUND-UaWXCH7NXmM1yVbvg_jjB0fbqu-BZlN7HFdNn7sT7BBKdq_Kc.jpg" alt="Movie poster 5">
+        <img src="asset/31520859cd81dcd9064e1b2f0f45a27ds-fullmovie2k.webp" alt="Movie poster 6">
+        <img src="asset/5d1c34b8f9491d82bf62391f7ac4e4a3.jpg" alt="Movie poster 7">
+        <img src="asset/images.jpg" alt="Movie poster 8"> 
+        <img src="asset/MV5BMTkwOTQ4OTg0OV5BMl5BanBnXkFtZTgwMzQyOTM0OTE@._V1_FMjpg_UX1000_.jpg" alt="Movie poster 1">
+        <img src="asset/MV5BZmJjZDE0MmYtNzgwYy00NTg2LWE0NDYtNzA0YTA4MjA0NmYxXkEyXkFqcGc@._V1_.jpg" alt="Movie poster 2">
+        <img src="asset/MV5BMTUyNzgxNjg2M15BMl5BanBnXkFtZTgwMTY1NDI1NjE@._V1_.jpg" alt="Movie poster 3">
+        <img src="asset/220px-Ek_Tha_Tiger_theatrical_poster.jpg">
+        <img src="asset/images (3).jpg" alt="Movie poster 5">
+        <img src="asset/075543500_1680872116-Ride_On_0.webp" alt="Movie poster 6">
+    </div>
+</body>
+</html>

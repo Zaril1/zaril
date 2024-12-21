@@ -1,0 +1,301 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Now Playing
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .movie-list {
+            display: flex;
+            overflow-x: auto;
+        }
+        .movie {
+            margin-right: 20px;
+            flex: 0 0 auto;
+        }
+        .movie img {
+            width: 200px;
+            height: 300px;
+            display: block;
+        }
+        .movie-info {
+            margin-top: 10px;
+        }
+        .movie-title {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .movie-rating {
+            color: #f5c518;
+        }
+        .movie-date {
+            font-size: 14px;
+            color: #ccc;
+        }
+        @media (max-width: 600px) {
+            .movie img {
+                width: 150px;
+                height: 225px;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <h1>
+    Now Playing
+   </h1>
+   <div class="movie-list">
+    <div class="movie">
+     <img alt="Poster of the movie Menjelang Api featuring a group of people standing in a dark, eerie setting." height="300" src="asset/in_cinemas_763277cf.jpeg" width="200"/>
+     <a href=""></a>
+     <div class="movie-info">
+      <div class="movie-title">
+       Menjelang Api
+      </div>
+      <div class="movie-rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+      <div class="movie-date">
+       DI BIOSKOP MEI 2024
+      </div>
+     </div>
+    </div>
+    <div class="movie">
+     <img alt="Poster of the movie Sumala featuring a person walking towards a house in a creepy, overgrown garden." height="300" src="asset/MV5BMjEyZjQ0MGUtZTlmOS00NTE4LTljM2ItZjM2MjRhOGQ5YTAzXkEyXkFqcGc@._V1_.jpg" width="200"/>
+     <div class="movie-info">
+      <div class="movie-title">
+       Sumala
+      </div>
+      <div class="movie-rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+      <div class="movie-date">
+       25 SEPTEMBER 2024
+      </div>
+     </div>
+    </div>
+    <div class="movie">
+     <img alt="Poster of the movie Gintama featuring animated characters in action poses." height="300" src="asset/AAAABcfDMaIil0Srjdpt9COU8_2Zkk38zBkSQbWPG6mwvUNT8RGUND-UaWXCH7NXmM1yVbvg_jjB0fbqu-BZlN7HFdNn7sT7BBKdq_Kc.jpg" width="200"/>
+     <div class="movie-info">
+      <div class="movie-title">
+       Gintama
+      </div>
+      <div class="movie-rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+      <div class="movie-date">
+       LIMITED EDITION
+      </div>
+     </div>
+    </div>
+    <div class="movie">
+     <img alt="Poster of the movie Another Movie featuring a dramatic scene with a character in a tense moment." height="300" src="asset/d75c2d95732ab6f72a3864046ede6155.jpg" width="200"/>
+     <div class="movie-info">
+      <div class="movie-title">
+       Another Movie
+      </div>
+      <div class="movie-rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+      <div class="movie-date">
+       COMING SOON
+      </div>
+     </div>
+    </div>
+    <div class="movie">
+     <img alt="Poster of the movie Yet Another Movie featuring a mysterious figure in a shadowy environment." height="300" src="asset/MV5BMTUyNzgxNjg2M15BMl5BanBnXkFtZTgwMTY1NDI1NjE@._V1_.jpg" width="200"/>
+     <div class="movie-info">
+      <div class="movie-title">
+       Yet Another Movie
+      </div>
+      <div class="movie-rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+      <div class="movie-date">
+       COMING SOON
+      </div>
+     </div>
+    </div>
+    <div class="movie">
+     <img alt="Poster of the movie Final Movie featuring an epic scene with multiple characters in action." height="300" src="asset/434027936-344085144719093-3974308654320919771-n-09b5fb8eb409260e33ab89df9e687e7c-d72d42ad02c0b289219506548aab84a6.jpg" width="200"/>
+     <div class="movie-info">
+      <div class="movie-title">
+       Final Movie
+      </div>
+      <div class="movie-rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+      <div class="movie-date">
+       COMING SOON
+      </div>
+     </div>
+    </div>
+    <div class="movie">
+     <img alt="Poster of the movie Extra Movie featuring a thrilling scene with a character in a dramatic pose." height="300" src="asset/075543500_1680872116-Ride_On_0.webp" width="200"/>
+     <div class="movie-info">
+      <div class="movie-title">
+       Extra Movie
+      </div>
+      <div class="movie-rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+      <div class="movie-date">
+       COMING SOON
+      </div>
+     </div>
+    </div>
+    <div class="movie">
+     <img alt="Poster of the movie Bonus Movie featuring a suspenseful scene with a character in a tense moment." height="300" src="asset/images (3).jpg" width="200"/>
+     <div class="movie-info">
+      <div class="movie-title">
+       Bonus Movie
+      </div>
+      <div class="movie-rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+      <div class="movie-date">
+       COMING SOON
+      </div>
+     </div>
+    </div>
+    <div class="movie">
+     <img alt="Poster of the movie Special Movie featuring a dramatic scene with a character in a powerful pose." height="300" src="asset/Poster_Galaksi.jpg" width="200"/>
+     <button>
+        <a href="terserah.html">next</a>
+     </button>
+     <div class="movie-info">
+      <div class="movie-title">
+       Special Movie
+      </div>
+      <div class="movie-rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+      <div class="movie-date">
+       COMING SOON
+      </div>
+     </div>
+    </div>
+    <div class="movie">
+     <img alt="Poster of the movie Ultimate Movie featuring an epic scene with multiple characters in action." height="300" src="asset/Suzume_no_Tojimari_poster.jpg" width="200"/>
+     <div class="movie-info">
+      <div class="movie-title">
+       Ultimate Movie
+      </div>
+      <div class="movie-rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+      <div class="movie-date">
+       COMING SOON
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
